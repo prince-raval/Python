@@ -1,0 +1,162 @@
+:root {
+  --bg: #0b1020;
+  --surface: #111833;
+  --text: #e9ecf7;
+  --muted: #b8bfdc;
+  --primary: #5eead4;
+  --primary-dark: #2dd4bf;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  line-height: 1.6;
+  color: var(--text);
+  background: linear-gradient(180deg, var(--bg), #0e1430);
+}
+
+.hero {
+  min-height: 78vh;
+  padding: 1.5rem 1.2rem 4rem;
+  background: radial-gradient(circle at top right, #173b68 0%, transparent 40%);
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.logo {
+  font-weight: 800;
+  letter-spacing: 0.3px;
+}
+
+.hero-content {
+  max-width: 700px;
+  margin: 4.5rem auto 0;
+  text-align: center;
+}
+
+.eyebrow {
+  color: var(--primary);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+  font-size: 0.85rem;
+}
+
+h1 {
+  font-size: clamp(2rem, 6vw, 4rem);
+  margin: 0.2rem 0;
+}
+
+h1 span {
+  color: var(--primary);
+}
+
+.subtitle {
+  color: var(--muted);
+  max-width: 620px;
+  margin: 0 auto;
+}
+
+.hero-actions {
+  margin-top: 1.6rem;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.btn {
+  display: inline-block;
+  border: none;
+  background: var(--primary);
+  color: #04221d;
+  padding: 0.72rem 1.1rem;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: var(--primary-dark);
+}
+
+.btn.small {
+  padding: 0.5rem 0.9rem;
+}
+
+.link {
+  color: var(--text);
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+.section {
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 2.5rem 1.2rem;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+}
+
+.card {
+  background: var(--surface);
+  border: 1px solid #27325d;
+  border-radius: 14px;
+  padding: 1rem;
+}
+
+.timeline {
+  list-style: none;
+  padding-left: 0;
+}
+
+.timeline li {
+  margin: 0.6rem 0;
+  padding: 0.8rem;
+  background: #121a38;
+  border-left: 4px solid var(--primary);
+  border-radius: 8px;
+}
+
+.register-form {
+  display: grid;
+  gap: 0.8rem;
+  max-width: 550px;
+}
+
+input {
+  width: 100%;
+  border: 1px solid #2b3c73;
+  background: #0e1530;
+  color: var(--text);
+  padding: 0.8rem;
+  border-radius: 8px;
+}
+
+.form-message {
+  margin-top: 0.5rem;
+  color: var(--primary);
+  font-weight: 600;
+}
+
+footer {
+  border-top: 1px solid #25325a;
+  text-align: center;
+  padding: 1.4rem;
+  color: var(--muted);
+}
