@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shahothon — Build. Solve. Celebrate.</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="hero">
+    <nav class="nav">
+      <div class="logo">⚡ Shahothon</div>
+      <a class="btn small" href="#register">Register</a>
+    </nav>
+
+    <div class="hero-content">
+      <p class="eyebrow">24-Hour Innovation Event</p>
+      <h1>Welcome to <span>Shahothon</span></h1>
+      <p class="subtitle">A high-energy event where creators, coders, and dreamers team up to build impactful ideas in one unforgettable day.</p>
+      <div class="hero-actions">
+        <a class="btn" href="#register">Join Shahothon</a>
+        <a class="link" href="#schedule">See Schedule</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="section" id="about">
+      <h2>What is Shahothon?</h2>
+      <p>Shahothon is a collaborative sprint for people who love solving real-world problems with technology, design, and creativity. Whether you're a beginner or a pro, this is your chance to learn, build, and present something meaningful.</p>
+    </section>
+
+    <section class="section cards" id="highlights">
+      <article class="card">
+        <h3>💡 Ideation</h3>
+        <p>Start with brainstorming sessions, mentor guidance, and clear challenge tracks.</p>
+      </article>
+      <article class="card">
+        <h3>🛠️ Building</h3>
+        <p>Work with your team, ship a prototype, and get support from experts throughout.</p>
+      </article>
+      <article class="card">
+        <h3>🏆 Final Showcase</h3>
+        <p>Pitch your project to judges and compete for prizes, internships, and recognition.</p>
+      </article>
+    </section>
+
+    <section class="section" id="schedule">
+      <h2>Event Schedule</h2>
+      <ul class="timeline">
+        <li><strong>09:00 AM</strong> — Opening Ceremony & Team Formation</li>
+        <li><strong>11:00 AM</strong> — Challenge Kickoff</li>
+        <li><strong>02:00 PM</strong> — Mentor Check-ins</li>
+        <li><strong>07:00 PM</strong> — Submission Deadline</li>
+        <li><strong>08:00 PM</strong> — Demo Pitches & Awards</li>
+      </ul>
+    </section>
+
+    <section class="section register" id="register">
+      <h2>Register for Shahothon</h2>
+      <p>Spots are limited. Add your details below and we’ll reach out with confirmation and event updates.</p>
+      <form class="register-form" id="registerForm">
+        <input type="text" name="name" placeholder="Your Name" required />
+        <input type="email" name="email" placeholder="Your Email" required />
+        <input type="text" name="team" placeholder="Team Name (Optional)" />
+        <button type="submit" class="btn">Reserve My Spot</button>
+      </form>
+      <p id="formMessage" class="form-message" aria-live="polite"></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>Made for Shahothon • Build. Solve. Celebrate.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
